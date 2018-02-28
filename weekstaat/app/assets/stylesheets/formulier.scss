@@ -1,6 +1,11 @@
 // Place all the styles related to the formulier controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+.h1-top {
+  margin-top: 50px;
+}
+
 .hidden { display: none; }
 
 /*flash*/
@@ -34,8 +39,7 @@ text-align: left;
 }
 
 .form-post {
-  background: white;
-  margin-top: 50px;
+  background: #f9f9f9;
   padding: 20px;
   border-radius: 5px;
   h1 {
@@ -44,7 +48,7 @@ text-align: left;
     font-size: 25px;
     color: #666666;
     margin-bottom: 50px;
-    margin-top: 0px;
+    margin-top: 50px;
   }
   .btn {
     width: 100%;

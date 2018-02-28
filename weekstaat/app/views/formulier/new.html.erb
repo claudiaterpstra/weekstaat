@@ -1,6 +1,6 @@
 <div class="container">
   <div align="center">
-    <h1>Nieuwe weekstaat</h1>
+    <h1 class="h1-top">Nieuwe weekstaat</h1>
     <div class="form">
       <div class="row">
         <div class="col-xs-offset-1 col-xs-10 col-sm-offset-2 col-sm-8">
@@ -18,6 +18,14 @@
               <%= f.input :tot, :required => true %>
               </div>
             </div>
+            <div class="row">
+              <div class="col-xs-6">
+                <%= f.input :aannemer, :required => true %>
+                </div>
+                <div class="col-xs-6">
+                  <%= f.input :plaats_werk, :required => true %>
+                </div>
+              </div>
             <div class="flexbox">
               <div class="row p-flexbox">
               <p class="p-werkuren">Gewerkte uren</p>
@@ -43,9 +51,60 @@
                    </div>
                   </div>
                 </div>
+                <h3>Productie</h3>
+               <div class="flexbox">
+              <div class="row p-flexbox">
+              <p class="p-werkuren">Gevelsteen</p>
+              </div>
+              <div class="col-flexbox">
+                <div class="col-xs-2">
+                  <%= f.input :gevelsteen_maandag, :required => true, :label => "Maandag" %>
+                  </div>
+                  <div class="col-xs-2">
+                   <%= f.input :gevelsteen_dinsdag, :required => true, :label => "Dinsdag" %>
+                   </div>
+                    <div class="col-xs-2">
+                   <%= f.input :gevelsteen_woensdag, :required => true, :label => "Woensdag" %>
+                   </div>
+                    <div class="col-xs-2">
+                   <%= f.input :gevelsteen_donderdag, :required => true, :label => "Donderdag" %>
+                   </div>
+                    <div class="col-xs-2">
+                   <%= f.input :gevelsteen_vrijdag, :required => true, :label => "Vrijdag" %>
+                   </div>
+                   <div class="col-xs-2">
+                   <%= f.input :gevelsteen_totaal, :label => "Totaal" %>
+                   </div>
+                  </div>
+                </div>
+                <div class="flexbox">
+                 <div class="row p-flexbox">
+                  <p class="p-werkuren">Pointmasteren</p>
+                </div>
+              <div class="col-flexbox">
+                <div class="col-xs-2">
+                  <%= f.input :pointmasteren_maandag, :required => true, label: false %>
+                  </div>
+                  <div class="col-xs-2">
+                   <%= f.input :pointmasteren_dinsdag, :required => true, label: false %>
+                   </div>
+                    <div class="col-xs-2">
+                   <%= f.input :pointmasteren_woensdag, :required => true, label: false %>
+                   </div>
+                    <div class="col-xs-2">
+                   <%= f.input :pointmasteren_donderdag, :required => true, label: false %>
+                   </div>
+                    <div class="col-xs-2">
+                   <%= f.input :pointmasteren_vrijdag, :required => true, label: false %>
+                   </div>
+                   <div class="col-xs-2">
+                   <%= f.input :pointmasteren_totaal, label: false %>
+                   </div>
+                  </div>
+                </div>
               </div>
             </div>
-                </div>
+            </div>
             <div>
               </br>
               <%= f.button :submit, 'Verstuur weekstaat', :class=> "main-button" %>

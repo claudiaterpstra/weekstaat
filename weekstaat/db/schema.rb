@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20180226142919) do
+ActiveRecord::Schema.define(version: 20180228102145) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -27,8 +27,28 @@ ActiveRecord::Schema.define(version: 20180226142919) do
     t.integer  "urendonderdag"
     t.integer  "urenvrijdag"
     t.integer  "urentotaal"
-    t.datetime "created_at",     null: false
-    t.datetime "updated_at",     null: false
+    t.datetime "created_at",                 null: false
+    t.datetime "updated_at",                 null: false
+    t.string   "plaats_werk"
+    t.string   "aannemer"
+    t.integer  "gevelsteen_maandag"
+    t.integer  "gevelsteen_dinsdag"
+    t.integer  "gevelsteen_woensdag"
+    t.integer  "gevelsteen_donderdag"
+    t.integer  "gevelsteen_vrijdag"
+    t.integer  "gevelsteen_totaal"
+    t.integer  "pointmasteren_maandag"
+    t.integer  "pointmasteren_dinsdag"
+    t.integer  "pointmasteren_woensdag"
+    t.integer  "pointmasteren_donderdag"
+    t.integer  "pointmasteren_vrijdag"
+    t.integer  "pointmasteren_totaal"
+    t.integer  "snelbouwsteen100_maandag"
+    t.string   "snelbouwsteen100_dinsdag"
+    t.string   "snelbouwsteen100_woensdag"
+    t.integer  "snelbouwsteen100_donderdag"
+    t.integer  "snelbouwsteen100_vrijdag"
+    t.integer  "snelbouwsteen100_totaal"
   end
 
 end
