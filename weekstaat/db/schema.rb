@@ -10,9 +10,25 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 0) do
+ActiveRecord::Schema.define(version: 20180226142919) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
+
+  create_table "formuliers", force: :cascade do |t|
+    t.integer  "weeknummer"
+    t.date     "van"
+    t.date     "tot"
+    t.string   "naam_werknemer"
+    t.string   "urenmaandag"
+    t.string   "integer"
+    t.integer  "urendinsdag"
+    t.integer  "urenwoensdag"
+    t.integer  "urendonderdag"
+    t.integer  "urenvrijdag"
+    t.integer  "urentotaal"
+    t.datetime "created_at",     null: false
+    t.datetime "updated_at",     null: false
+  end
 
 end

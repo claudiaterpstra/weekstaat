@@ -1,0 +1,27 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  weeknummer: 1
+  van: 2018-02-26
+  tot: 2018-02-26
+  naam_werknemer: MyString
+  urenmaandag: MyString
+  integer: MyString
+  urendinsdag: 1
+  urenwoensdag: 1
+  urendonderdag: 1
+  urenvrijdag: 1
+  urentotaal: 1
+
+two:
+  weeknummer: 1
+  van: 2018-02-26
+  tot: 2018-02-26
+  naam_werknemer: MyString
+  urenmaandag: MyString
+  integer: MyString
+  urendinsdag: 1
+  urenwoensdag: 1
+  urendonderdag: 1
+  urenvrijdag: 1
+  urentotaal: 1

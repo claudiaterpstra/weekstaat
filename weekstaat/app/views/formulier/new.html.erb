@@ -1,0 +1,58 @@
+<div class="container">
+  <div align="center">
+    <h1>Nieuwe weekstaat</h1>
+    <div class="form">
+      <div class="row">
+        <div class="col-xs-offset-1 col-xs-10 col-sm-offset-2 col-sm-8">
+          <div class="form-post">
+            <%= simple_form_for @formulier, url: formulier_index_path, :html => {:class => 'form-horizontal' } do |f| %>
+            <%= f.input :naam_werknemer, :required => true, :label => "Naam" %>
+             <div class="row">
+               <div class="col-xs-4">
+                <%= f.input :weeknummer, :required => true %>
+              </div>
+              <div class="col-xs-4 margin-left">
+                <%= f.input :van, :required => true %>
+              </div>
+              <div class="col-xs-4 margin-left">
+              <%= f.input :tot, :required => true %>
+              </div>
+            </div>
+            <div class="flexbox">
+              <div class="row p-flexbox">
+              <p class="p-werkuren">Gewerkte uren</p>
+              </div>
+              <div class="col-flexbox">
+                <div class="col-xs-2">
+                  <%= f.input :urenmaandag, :required => true, :label => "Maandag" %>
+                  </div>
+                  <div class="col-xs-2">
+                   <%= f.input :urendinsdag, :required => true, :label => "Dinsdag" %>
+                   </div>
+                    <div class="col-xs-2">
+                   <%= f.input :urenwoensdag, :required => true, :label => "Woensdag" %>
+                   </div>
+                    <div class="col-xs-2">
+                   <%= f.input :urendonderdag, :required => true, :label => "Donderdag" %>
+                   </div>
+                    <div class="col-xs-2">
+                   <%= f.input :urenvrijdag, :required => true, :label => "Vrijdag" %>
+                   </div>
+                   <div class="col-xs-2">
+                   <%= f.input :urentotaal, :label => "Totaal" %>
+                   </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+                </div>
+            <div>
+              </br>
+              <%= f.button :submit, 'Verstuur weekstaat', :class=> "main-button" %>
+            </div>
+            <% end %>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

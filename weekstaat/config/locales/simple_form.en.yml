@@ -1,4 +1,8 @@
 en:
+  errors:
+    messages:
+      blank: "Verplicht veld"
+      invalid: "Dit emailadres klopt niet"
   simple_form:
     "yes": 'Yes'
     "no": 'No'
