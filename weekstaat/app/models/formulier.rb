@@ -29,6 +29,18 @@ class Formulier < MailForm::Base
   attribute :snelbouwsteen100_donderdag
   attribute :snelbouwsteen100_vrijdag
   attribute :snelbouwsteen100_totaal
+  attribute :snelbouwsteen140_maandag
+  attribute :snelbouwsteen140_dinsdag
+  attribute :snelbouwsteen140_woensdag
+  attribute :snelbouwsteen140_donderdag
+  attribute :snelbouwsteen140_vrijdag
+  attribute :snelbouwsteen140_totaal
+  attribute :hardschuim_maandag
+  attribute :hardschuim_dinsdag
+  attribute :hardschuim_woensdag
+  attribute :hardschuim_donderdag
+  attribute :hardschuim_vrijdag
+  attribute :hardschuim_totaal
   def headers
     {
       :subject => "Mijn weekstaten",

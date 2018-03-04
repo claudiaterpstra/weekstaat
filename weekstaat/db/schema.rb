@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20180228102145) do
+ActiveRecord::Schema.define(version: 20180304144333) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -49,6 +49,18 @@ ActiveRecord::Schema.define(version: 20180228102145) do
     t.integer  "snelbouwsteen100_donderdag"
     t.integer  "snelbouwsteen100_vrijdag"
     t.integer  "snelbouwsteen100_totaal"
+    t.integer  "snelbouwsteen400_maandag"
+    t.integer  "snelbouwsteen400_dinsdag"
+    t.integer  "snelbouwsteen400_woensdag"
+    t.integer  "snelbouwsteen400_donderdag"
+    t.integer  "snelbouwsteen400_vrijdag"
+    t.integer  "snelbouwsteen400_totaal"
+    t.integer  "hardschuim_maandag"
+    t.integer  "hardschuim_dinsdag"
+    t.integer  "hardschuim_woensdag"
+    t.integer  "hardschuim_donderdag"
+    t.integer  "hardschuim_vrijdag"
+    t.integer  "hardschuim_totaal"
   end
 
 end
