@@ -192,7 +192,539 @@
                    </div>
                   </div>
                 </div>
+                    <div class="flexbox">
+                 <div class="row">
+                 <div class="col-fixed-200">
+                  <p class="p-werkuren2">Isolatie afplakken</p>
+                  </div>
+                </div>
+              <div class="col-flexbox">
+                <div class="col-xs-2">
+                  <%= f.input :isolatieafplakken_maandag, :required => true, label: false %>
+                  </div>
+                  <div class="col-xs-2">
+                   <%= f.input :isolatieafplakken_dinsdag, :required => true, label: false %>
+                   </div>
+                    <div class="col-xs-2">
+                   <%= f.input :isolatieafplakken_woensdag, :required => true, label: false %>
+                   </div>
+                    <div class="col-xs-2">
+                   <%= f.input :isolatieafplakken_donderdag, :required => true, label: false %>
+                   </div>
+                    <div class="col-xs-2">
+                   <%= f.input :isolatieafplakken_vrijdag, :required => true, label: false %>
+                   </div>
+                   <div class="col-xs-2">
+                   <%= f.input :isolatieafplakken_totaal, label: false %>
+                   </div>
+                  </div>
+                </div>
 
+                   <div class="flexbox">
+                 <div class="row">
+                 <div class="col-fixed-200">
+                  <p class="p-werkuren2">Rollagen</p>
+                  </div>
+                </div>
+              <div class="col-flexbox">
+                <div class="col-xs-2">
+                  <%= f.input :rollagen_maandag, :required => true, label: false %>
+                  </div>
+                  <div class="col-xs-2">
+                   <%= f.input :rollagen_dinsdag, :required => true, label: false %>
+                   </div>
+                    <div class="col-xs-2">
+                   <%= f.input :rollagen_woensdag, :required => true, label: false %>
+                   </div>
+                    <div class="col-xs-2">
+                   <%= f.input :rollagen_donderdag, :required => true, label: false %>
+                   </div>
+                    <div class="col-xs-2">
+                   <%= f.input :rollagen_vrijdag, :required => true, label: false %>
+                   </div>
+                   <div class="col-xs-2">
+                   <%= f.input :rollagen_totaal, label: false %>
+                   </div>
+                  </div>
+                </div>
+
+                     <div class="flexbox">
+                 <div class="row">
+                 <div class="col-fixed-200">
+                  <p class="p-werkuren2">Dilitatie</p>
+                  </div>
+                </div>
+              <div class="col-flexbox">
+                <div class="col-xs-2">
+                  <%= f.input :dilitatie_maandag, :required => true, label: false %>
+                  </div>
+                  <div class="col-xs-2">
+                   <%= f.input :dilitatie_dinsdag, :required => true, label: false %>
+                   </div>
+                    <div class="col-xs-2">
+                   <%= f.input :dilitatie_woensdag, :required => true, label: false %>
+                   </div>
+                    <div class="col-xs-2">
+                   <%= f.input :dilitatie_donderdag, :required => true, label: false %>
+                   </div>
+                    <div class="col-xs-2">
+                   <%= f.input :dilitatie_vrijdag, :required => true, label: false %>
+                   </div>
+                   <div class="col-xs-2">
+                   <%= f.input :dilitatie_totaal, label: false %>
+                   </div>
+                  </div>
+                </div>
+
+                   <div class="flexbox">
+                 <div class="row">
+                 <div class="col-fixed-200">
+                  <p class="p-werkuren2">Latei staal/beton tot 25kg</p>
+                  </div>
+                </div>
+              <div class="col-flexbox">
+                <div class="col-xs-2">
+                  <%= f.input :lateitot25_maandag, :required => true, label: false %>
+                  </div>
+                  <div class="col-xs-2">
+                   <%= f.input :lateitot25_dinsdag, :required => true, label: false %>
+                   </div>
+                    <div class="col-xs-2">
+                   <%= f.input :lateitot25_woensdag, :required => true, label: false %>
+                   </div>
+                    <div class="col-xs-2">
+                   <%= f.input :lateitot25_donderdag, :required => true, label: false %>
+                   </div>
+                    <div class="col-xs-2">
+                   <%= f.input :lateitot25_vrijdag, :required => true, label: false %>
+                   </div>
+                   <div class="col-xs-2">
+                   <%= f.input :lateitot25_totaal, label: false %>
+                   </div>
+                  </div>
+                </div>
+
+                 <div class="flexbox">
+                 <div class="row">
+                 <div class="col-fixed-200">
+                  <p class="p-werkuren2">Latei staal/beton tot 50kg</p>
+                  </div>
+                </div>
+              <div class="col-flexbox">
+                <div class="col-xs-2">
+                  <%= f.input :lateitot50_maandag, :required => true, label: false %>
+                  </div>
+                  <div class="col-xs-2">
+                   <%= f.input :lateitot50_dinsdag, :required => true, label: false %>
+                   </div>
+                    <div class="col-xs-2">
+                   <%= f.input :lateitot50_woensdag, :required => true, label: false %>
+                   </div>
+                    <div class="col-xs-2">
+                   <%= f.input :lateitot50_donderdag, :required => true, label: false %>
+                   </div>
+                    <div class="col-xs-2">
+                   <%= f.input :lateitot50_vrijdag, :required => true, label: false %>
+                   </div>
+                   <div class="col-xs-2">
+                   <%= f.input :lateitot50_totaal, label: false %>
+                   </div>
+                  </div>
+                </div>
+
+                  <div class="flexbox">
+                 <div class="row">
+                 <div class="col-fixed-200">
+                  <p class="p-werkuren2">Negge groter dan 90</p>
+                  </div>
+                </div>
+              <div class="col-flexbox">
+                <div class="col-xs-2">
+                  <%= f.input :negge_maandag, :required => true, label: false %>
+                  </div>
+                  <div class="col-xs-2">
+                   <%= f.input :negge_dinsdag, :required => true, label: false %>
+                   </div>
+                    <div class="col-xs-2">
+                   <%= f.input :negge_woensdag, :required => true, label: false %>
+                   </div>
+                    <div class="col-xs-2">
+                   <%= f.input :negge_donderdag, :required => true, label: false %>
+                   </div>
+                    <div class="col-xs-2">
+                   <%= f.input :negge_vrijdag, :required => true, label: false %>
+                   </div>
+                   <div class="col-xs-2">
+                   <%= f.input :negge_totaal, label: false %>
+                   </div>
+                  </div>
+                </div>
+
+                  <div class="flexbox">
+                 <div class="row">
+                 <div class="col-fixed-200">
+                  <p class="p-werkuren2">Perinsul</p>
+                  </div>
+                </div>
+              <div class="col-flexbox">
+                <div class="col-xs-2">
+                  <%= f.input :perinsul_maandag, :required => true, label: false %>
+                  </div>
+                  <div class="col-xs-2">
+                   <%= f.input :perinsul_dinsdag, :required => true, label: false %>
+                   </div>
+                    <div class="col-xs-2">
+                   <%= f.input :perinsul_woensdag, :required => true, label: false %>
+                   </div>
+                    <div class="col-xs-2">
+                   <%= f.input :perinsul_donderdag, :required => true, label: false %>
+                   </div>
+                    <div class="col-xs-2">
+                   <%= f.input :perinsul_vrijdag, :required => true, label: false %>
+                   </div>
+                   <div class="col-xs-2">
+                   <%= f.input :perinsul_totaal, label: false %>
+                   </div>
+                  </div>
+                </div>
+
+                  <div class="flexbox">
+                 <div class="row">
+                 <div class="col-fixed-200">
+                  <p class="p-werkuren2">Schragensteiger</p>
+                  </div>
+                </div>
+              <div class="col-flexbox">
+                <div class="col-xs-2">
+                  <%= f.input :schragensteiger_maandag, :required => true, label: false %>
+                  </div>
+                  <div class="col-xs-2">
+                   <%= f.input :schragensteiger_dinsdag, :required => true, label: false %>
+                   </div>
+                    <div class="col-xs-2">
+                   <%= f.input :schragensteiger_woensdag, :required => true, label: false %>
+                   </div>
+                    <div class="col-xs-2">
+                   <%= f.input :schragensteiger_donderdag, :required => true, label: false %>
+                   </div>
+                    <div class="col-xs-2">
+                   <%= f.input :schragensteiger_vrijdag, :required => true, label: false %>
+                   </div>
+                   <div class="col-xs-2">
+                   <%= f.input :schragensteiger_totaal, label: false %>
+                   </div>
+                  </div>
+                </div>
+
+                <div class="flexbox">
+                 <div class="row">
+                 <div class="col-fixed-200">
+                  <p class="p-werkuren2">Consoles/metselb.</p>
+                  </div>
+                </div>
+              <div class="col-flexbox">
+                <div class="col-xs-2">
+                  <%= f.input :consoles_maandag, :required => true, label: false %>
+                  </div>
+                  <div class="col-xs-2">
+                   <%= f.input :consoles_dinsdag, :required => true, label: false %>
+                   </div>
+                    <div class="col-xs-2">
+                   <%= f.input :consoles_woensdag, :required => true, label: false %>
+                   </div>
+                    <div class="col-xs-2">
+                   <%= f.input :consoles_donderdag, :required => true, label: false %>
+                   </div>
+                    <div class="col-xs-2">
+                   <%= f.input :consoles_vrijdag, :required => true, label: false %>
+                   </div>
+                   <div class="col-xs-2">
+                   <%= f.input :consoles_totaal, label: false %>
+                   </div>
+                  </div>
+                </div>
+
+                 <div class="flexbox">
+                 <div class="row">
+                 <div class="col-fixed-200">
+                  <p class="p-werkuren2">Vloerrooster</p>
+                  </div>
+                </div>
+              <div class="col-flexbox">
+                <div class="col-xs-2">
+                  <%= f.input :vloerrooster_maandag, :required => true, label: false %>
+                  </div>
+                  <div class="col-xs-2">
+                   <%= f.input :vloerrooster_dinsdag, :required => true, label: false %>
+                   </div>
+                    <div class="col-xs-2">
+                   <%= f.input :vloerrooster_woensdag, :required => true, label: false %>
+                   </div>
+                    <div class="col-xs-2">
+                   <%= f.input :vloerrooster_donderdag, :required => true, label: false %>
+                   </div>
+                    <div class="col-xs-2">
+                   <%= f.input :vloerrooster_vrijdag, :required => true, label: false %>
+                   </div>
+                   <div class="col-xs-2">
+                   <%= f.input :vloerrooster_totaal, label: false %>
+                   </div>
+                  </div>
+                </div>
+
+                  <div class="flexbox">
+                 <div class="row">
+                 <div class="col-fixed-200">
+                  <p class="p-werkuren2">Stootvoegrooster</p>
+                  </div>
+                </div>
+              <div class="col-flexbox">
+                <div class="col-xs-2">
+                  <%= f.input :stootvoegrooster_maandag, :required => true, label: false %>
+                  </div>
+                  <div class="col-xs-2">
+                   <%= f.input :stootvoegrooster_dinsdag, :required => true, label: false %>
+                   </div>
+                    <div class="col-xs-2">
+                   <%= f.input :stootvoegrooster_woensdag, :required => true, label: false %>
+                   </div>
+                    <div class="col-xs-2">
+                   <%= f.input :stootvoegrooster_donderdag, :required => true, label: false %>
+                   </div>
+                    <div class="col-xs-2">
+                   <%= f.input :stootvoegrooster_vrijdag, :required => true, label: false %>
+                   </div>
+                   <div class="col-xs-2">
+                   <%= f.input :stootvoegrooster_totaal, label: false %>
+                   </div>
+                  </div>
+                </div>
+
+
+                  <div class="flexbox">
+                 <div class="row">
+                 <div class="col-fixed-200">
+                  <p class="p-werkuren2">Murfor</p>
+                  </div>
+                </div>
+              <div class="col-flexbox">
+                <div class="col-xs-2">
+                  <%= f.input :murfor_maandag, :required => true, label: false %>
+                  </div>
+                  <div class="col-xs-2">
+                   <%= f.input :murfor_dinsdag, :required => true, label: false %>
+                   </div>
+                    <div class="col-xs-2">
+                   <%= f.input :murfor_woensdag, :required => true, label: false %>
+                   </div>
+                    <div class="col-xs-2">
+                   <%= f.input :murfor_donderdag, :required => true, label: false %>
+                   </div>
+                    <div class="col-xs-2">
+                   <%= f.input :murfor_vrijdag, :required => true, label: false %>
+                   </div>
+                   <div class="col-xs-2">
+                   <%= f.input :murfor_totaal, label: false %>
+                   </div>
+                  </div>
+                </div>
+
+                <div class="flexbox">
+                 <div class="row">
+                 <div class="col-fixed-200">
+                  <p class="p-werkuren2">DPC</p>
+                  </div>
+                </div>
+              <div class="col-flexbox">
+                <div class="col-xs-2">
+                  <%= f.input :dpc_maandag, :required => true, label: false %>
+                  </div>
+                  <div class="col-xs-2">
+                   <%= f.input :dpc_dinsdag, :required => true, label: false %>
+                   </div>
+                    <div class="col-xs-2">
+                   <%= f.input :dpc_woensdag, :required => true, label: false %>
+                   </div>
+                    <div class="col-xs-2">
+                   <%= f.input :dpc_donderdag, :required => true, label: false %>
+                   </div>
+                    <div class="col-xs-2">
+                   <%= f.input :dpc_vrijdag, :required => true, label: false %>
+                   </div>
+                   <div class="col-xs-2">
+                   <%= f.input :dpc_totaal, label: false %>
+                   </div>
+                  </div>
+                </div>
+
+                <div class="flexbox">
+                 <div class="row">
+                 <div class="col-fixed-200">
+                  <p class="p-werkuren2">Zagen</p>
+                  </div>
+                </div>
+              <div class="col-flexbox">
+                <div class="col-xs-2">
+                  <%= f.input :zagen_maandag, :required => true, label: false %>
+                  </div>
+                  <div class="col-xs-2">
+                   <%= f.input :zagen_dinsdag, :required => true, label: false %>
+                   </div>
+                    <div class="col-xs-2">
+                   <%= f.input :zagen_woensdag, :required => true, label: false %>
+                   </div>
+                    <div class="col-xs-2">
+                   <%= f.input :zagen_donderdag, :required => true, label: false %>
+                   </div>
+                    <div class="col-xs-2">
+                   <%= f.input :zagen_vrijdag, :required => true, label: false %>
+                   </div>
+                   <div class="col-xs-2">
+                   <%= f.input :zagen_totaal, label: false %>
+                   </div>
+                  </div>
+                </div>
+
+                <div class="flexbox">
+                 <div class="row">
+                 <div class="col-fixed-200">
+                  <p class="p-werkuren2">Gasbeton koude br.</p>
+                  </div>
+                </div>
+              <div class="col-flexbox">
+                <div class="col-xs-2">
+                  <%= f.input :gasbeton_maandag, :required => true, label: false %>
+                  </div>
+                  <div class="col-xs-2">
+                   <%= f.input :gasbeton_dinsdag, :required => true, label: false %>
+                   </div>
+                    <div class="col-xs-2">
+                   <%= f.input :gasbeton_woensdag, :required => true, label: false %>
+                   </div>
+                    <div class="col-xs-2">
+                   <%= f.input :gasbeton_donderdag, :required => true, label: false %>
+                   </div>
+                    <div class="col-xs-2">
+                   <%= f.input :gasbeton_vrijdag, :required => true, label: false %>
+                   </div>
+                   <div class="col-xs-2">
+                   <%= f.input :gasbeton_totaal, label: false %>
+                   </div>
+                  </div>
+                </div>
+
+                 <div class="flexbox">
+                 <div class="row">
+                 <div class="col-fixed-200">
+                  <p class="p-werkuren2">Raamdorpel tot 25</p>
+                  </div>
+                </div>
+              <div class="col-flexbox">
+                <div class="col-xs-2">
+                  <%= f.input :raamdorpel25_maandag, :required => true, label: false %>
+                  </div>
+                  <div class="col-xs-2">
+                   <%= f.input :raamdorpel25_dinsdag, :required => true, label: false %>
+                   </div>
+                    <div class="col-xs-2">
+                   <%= f.input :raamdorpel25_woensdag, :required => true, label: false %>
+                   </div>
+                    <div class="col-xs-2">
+                   <%= f.input :raamdorpel25_donderdag, :required => true, label: false %>
+                   </div>
+                    <div class="col-xs-2">
+                   <%= f.input :raamdorpel25_vrijdag, :required => true, label: false %>
+                   </div>
+                   <div class="col-xs-2">
+                   <%= f.input :raamdorpel25_totaal, label: false %>
+                   </div>
+                  </div>
+                </div>
+
+                  <div class="flexbox">
+                 <div class="row">
+                 <div class="col-fixed-200">
+                  <p class="p-werkuren2">Raamdorpel tot 50</p>
+                  </div>
+                </div>
+              <div class="col-flexbox">
+                <div class="col-xs-2">
+                  <%= f.input :raamdorpel50_maandag, :required => true, label: false %>
+                  </div>
+                  <div class="col-xs-2">
+                   <%= f.input :raamdorpel50_dinsdag, :required => true, label: false %>
+                   </div>
+                    <div class="col-xs-2">
+                   <%= f.input :raamdorpel50_woensdag, :required => true, label: false %>
+                   </div>
+                    <div class="col-xs-2">
+                   <%= f.input :raamdorpel50_donderdag, :required => true, label: false %>
+                   </div>
+                    <div class="col-xs-2">
+                   <%= f.input :raamdorpel50_vrijdag, :required => true, label: false %>
+                   </div>
+                   <div class="col-xs-2">
+                   <%= f.input :raamdorpel50_totaal, label: false %>
+                   </div>
+                  </div>
+                </div>
+
+                     <div class="flexbox">
+                 <div class="row">
+                 <div class="col-fixed-200">
+                  <p class="p-werkuren2">Raamdorpel tot 100</p>
+                  </div>
+                </div>
+              <div class="col-flexbox">
+                <div class="col-xs-2">
+                  <%= f.input :raamdorpel100_maandag, :required => true, label: false %>
+                  </div>
+                  <div class="col-xs-2">
+                   <%= f.input :raamdorpel100_dinsdag, :required => true, label: false %>
+                   </div>
+                    <div class="col-xs-2">
+                   <%= f.input :raamdorpel100_woensdag, :required => true, label: false %>
+                   </div>
+                    <div class="col-xs-2">
+                   <%= f.input :raamdorpel100_donderdag, :required => true, label: false %>
+                   </div>
+                    <div class="col-xs-2">
+                   <%= f.input :raamdorpel100_vrijdag, :required => true, label: false %>
+                   </div>
+                   <div class="col-xs-2">
+                   <%= f.input :raamdorpel100_totaal, label: false %>
+                   </div>
+                  </div>
+                </div>
+
+                     <div class="flexbox">
+                 <div class="row">
+                 <div class="col-fixed-200">
+                  <p class="p-werkuren2">Schuinte</p>
+                  </div>
+                </div>
+              <div class="col-flexbox">
+                <div class="col-xs-2">
+                  <%= f.input :schuinte_maandag, :required => true, label: false %>
+                  </div>
+                  <div class="col-xs-2">
+                   <%= f.input :schuinte_dinsdag, :required => true, label: false %>
+                   </div>
+                    <div class="col-xs-2">
+                   <%= f.input :schuinte_woensdag, :required => true, label: false %>
+                   </div>
+                    <div class="col-xs-2">
+                   <%= f.input :schuinte_donderdag, :required => true, label: false %>
+                   </div>
+                    <div class="col-xs-2">
+                   <%= f.input :schuinte_vrijdag, :required => true, label: false %>
+                   </div>
+                   <div class="col-xs-2">
+                   <%= f.input :schuinte_totaal, label: false %>
+                   </div>
+                  </div>
+                </div>
+                    <%= f.input :opmerkingen, :as => :text %>
               </div>
             </div>
             </div>
