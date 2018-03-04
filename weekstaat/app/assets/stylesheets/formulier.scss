@@ -77,8 +77,19 @@ text-align: left;
 
 .margin-left {
   margin-left: 0;
+  padding-left: 30px;
 }
 
 .col-fixed-200{
     width:200px;
+}
+
+.col-fixed-300{
+    width:300px;
+}
+
+.main-button {
+  background-color: #1c367b !important;
+  color: white !important;
+  margin-bottom: 60px !important;
 }

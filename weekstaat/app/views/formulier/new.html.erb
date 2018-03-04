@@ -6,7 +6,9 @@
         <div class="col-xs-offset-1 col-xs-10 col-sm-offset-2 col-sm-8">
           <div class="form-post">
             <%= simple_form_for @formulier, url: formulier_index_path, :html => {:class => 'form-horizontal' } do |f| %>
+            <div class="col-fixed-300">
             <%= f.input :naam_werknemer, :required => true, :label => "Naam" %>
+            </div>
              <div class="row">
                <div class="col-xs-4">
                 <%= f.input :weeknummer, :required => true %>
@@ -28,7 +30,9 @@
               </div>
             <div class="flexbox">
               <div class="row">
+               <div class="col-fixed-200">
               <p class="p-werkuren">Gewerkte uren</p>
+              </div>
               </div>
               <div class="col-flexbox">
                 <div class="col-xs-2">
