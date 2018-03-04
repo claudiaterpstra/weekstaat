@@ -11,25 +11,24 @@ class Formulier < MailForm::Base
   attribute :urentotaal
   attribute :aannemer, :validate => true
   attribute :plaats_werk, :validate => true
-  attribute :gevelsteen_maandag, :validate => true
-  attribute :gevelsteen_dinsdag, :validate => true
-  attribute :gevelsteen_woensdag, :validate => true
-  attribute :gevelsteen_donderdag, :validate => true
-  attribute :gevelsteen_vrijdag, :validate => true
-  attribute :gevelsteen_totaal, :validate => true
-  attribute :pointmasteren_maandag, :validate => true
-  attribute :pointmasteren_dinsdag, :validate => true
-  attribute :pointmasteren_woensdag, :validate => true
-  attribute :pointmasteren_donderdag, :validate => true
-  attribute :pointmasteren_vrijdag, :validate => true
-  attribute :pointmasteren_totaal, :validate => true
-  attribute :snelbouwsteen100_maandag, :validate => true
-  attribute :snelbouwsteen100_dinsdag, :string
-  attribute :snelbouwsteen100_woensdag, :validate => true
-  attribute :snelbouwsteen100_donderdag, :validate => true
-  attribute :snelbouwsteen100_vrijdag, :validate => true
-  attribute :snelbouwsteen100_totaal, :validate => true
-
+  attribute :gevelsteen_maandag
+  attribute :gevelsteen_dinsdag
+  attribute :gevelsteen_woensdag
+  attribute :gevelsteen_donderdag
+  attribute :gevelsteen_vrijdag
+  attribute :gevelsteen_totaal
+  attribute :pointmasteren_maandag
+  attribute :pointmasteren_dinsdag
+  attribute :pointmasteren_woensdag
+  attribute :pointmasteren_donderdag
+  attribute :pointmasteren_vrijdag
+  attribute :pointmasteren_totaal
+  attribute :snelbouwsteen100_maandag
+  attribute :snelbouwsteen100_dinsdag
+  attribute :snelbouwsteen100_woensdag
+  attribute :snelbouwsteen100_donderdag
+  attribute :snelbouwsteen100_vrijdag
+  attribute :snelbouwsteen100_totaal
   def headers
     {
       :subject => "Mijn weekstaten",
