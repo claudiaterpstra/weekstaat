@@ -156,11 +156,13 @@ class Formulier < MailForm::Base
  attribute :schuinte_vrijdag
  attribute :schuinte_totaal
  attribute :opmerkingen
+
   def headers
     {
       :subject => "Mijn weekstaten",
       :to => "terpstra.claudia@gmail.com",
-      :from => %("#{naam_werknemer}")
+      :from => %("#{naam_werknemer}"),
+      :content_type => "text/html"
     }
   end
 

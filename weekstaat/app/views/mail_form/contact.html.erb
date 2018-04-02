@@ -1,0 +1,288 @@
+<h3>Er is een nieuwe weekstaat binnen</h3>
+
+<p>Beste Marga, dit is de weekstaat van: <%= @resource.naam_werknemer %></p>
+
+<p>Week: <%= @resource.weeknummer %></p>
+<p>Van: <%= @resource.van %></p>
+<p>Tot: <%= @resource.tot %></p>
+
+<p>Aannemer: <%= @resource.aannemer %></p>
+<p>Plaats van werk: <%= @resource.plaats_werk %></p>
+
+<h4>Het aantal gewerkte uren van deze week:</h4>
+<table style= "border: 1px solid black; border-collapse: collapse">
+  <tr style= "border: 1px solid black; border-collapse: collapse">
+  <th style= "border: 1px solid black; border-collapse: collapse">Maandag</th>
+  <th style= "border: 1px solid black; border-collapse: collapse">Dinsdag</th>
+  <th style= "border: 1px solid black; border-collapse: collapse">Woensdag</th>
+  <th style= "border: 1px solid black; border-collapse: collapse">Donderdag</th>
+  <th style= "border: 1px solid black; border-collapse: collapse">Vrijdag</th>
+  <th style= "border: 1px solid black; border-collapse: collapse">Totaal</th>
+  </tr>
+  <tr>
+    <td style= "border: 1px solid black; border-collapse: collapse"><%= @resource.urenmaandag %></td>
+    <td style= "border: 1px solid black; border-collapse: collapse"><%= @resource.urendinsdag %></td>
+    <td style= "border: 1px solid black; border-collapse: collapse"><%= @resource.urenwoensdag %></td>
+    <td style= "border: 1px solid black; border-collapse: collapse"><%= @resource.urendonderdag %></td>
+    <td style= "border: 1px solid black; border-collapse: collapse"><%= @resource.urenvrijdag %></td>
+    <td style= "border: 1px solid black; border-collapse: collapse"><%= @resource.urentotaal %></td>
+  </tr>
+</table>
+
+<h4>Productie</h4>
+<table style= "border: 1px solid black; border-collapse: collapse">
+  <tr style= "border: 1px solid black; border-collapse: collapse">
+  <th></th>
+  <th style= "border: 1px solid black; border-collapse: collapse">Maandag</th>
+  <th style= "border: 1px solid black; border-collapse: collapse">Dinsdag</th>
+  <th style= "border: 1px solid black; border-collapse: collapse">Woensdag</th>
+  <th style= "border: 1px solid black; border-collapse: collapse">Donderdag</th>
+  <th style= "border: 1px solid black; border-collapse: collapse">Vrijdag</th>
+  <th style= "border: 1px solid black; border-collapse: collapse">Totaal</th>
+  </tr>
+  <tr>
+    <td style= "border: 1px solid black; border-collapse: collapse">Gevelsteen</td>
+    <td style= "border: 1px solid black; border-collapse: collapse"><%= @resource.gevelsteen_maandag %></td>
+    <td style= "border: 1px solid black; border-collapse: collapse"><%= @resource.gevelsteen_dinsdag %></td>
+    <td style= "border: 1px solid black; border-collapse: collapse"><%= @resource.gevelsteen_woensdag %></td>
+    <td style= "border: 1px solid black; border-collapse: collapse"><%= @resource.gevelsteen_donderdag %></td>
+    <td style= "border: 1px solid black; border-collapse: collapse"><%= @resource.gevelsteen_vrijdag %></td>
+    <td style= "border: 1px solid black; border-collapse: collapse"><%= @resource.gevelsteen_totaal %></td>
+  </tr>
+   <tr>
+    <td style= "border: 1px solid black; border-collapse: collapse">Pointmasteren</td>
+    <td style= "border: 1px solid black; border-collapse: collapse"><%= @resource.pointmasteren_maandag %></td>
+    <td style= "border: 1px solid black; border-collapse: collapse"><%= @resource.pointmasteren_dinsdag %></td>
+    <td style= "border: 1px solid black; border-collapse: collapse"><%= @resource.pointmasteren_woensdag %></td>
+    <td style= "border: 1px solid black; border-collapse: collapse"><%= @resource.pointmasteren_donderdag %></td>
+    <td style= "border: 1px solid black; border-collapse: collapse"><%= @resource.pointmasteren_vrijdag %></td>
+    <td style= "border: 1px solid black; border-collapse: collapse"><%= @resource.pointmasteren_totaal %></td>
+  </tr>
+   <tr>
+    <td style= "border: 1px solid black; border-collapse: collapse">Snelbouwsteen 100</td>
+    <td style= "border: 1px solid black; border-collapse: collapse"><%= @resource.snelbouwsteen100_maandag %></td>
+    <td style= "border: 1px solid black; border-collapse: collapse"><%= @resource.snelbouwsteen100_dinsdag %></td>
+    <td style= "border: 1px solid black; border-collapse: collapse"><%= @resource.snelbouwsteen100_woensdag %></td>
+    <td style= "border: 1px solid black; border-collapse: collapse"><%= @resource.snelbouwsteen100_donderdag %></td>
+    <td style= "border: 1px solid black; border-collapse: collapse"><%= @resource.snelbouwsteen100_vrijdag %></td>
+    <td style= "border: 1px solid black; border-collapse: collapse"><%= @resource.snelbouwsteen100_totaal %></td>
+  </tr>
+  <tr>
+    <td style= "border: 1px solid black; border-collapse: collapse">Snelbouwsteen 140</td>
+    <td style= "border: 1px solid black; border-collapse: collapse"><%= @resource.snelbouwsteen140_maandag %></td>
+    <td style= "border: 1px solid black; border-collapse: collapse"><%= @resource.snelbouwsteen140_dinsdag %></td>
+    <td style= "border: 1px solid black; border-collapse: collapse"><%= @resource.snelbouwsteen140_woensdag %></td>
+    <td style= "border: 1px solid black; border-collapse: collapse"><%= @resource.snelbouwsteen140_donderdag %></td>
+    <td style= "border: 1px solid black; border-collapse: collapse"><%= @resource.snelbouwsteen140_vrijdag %></td>
+    <td style= "border: 1px solid black; border-collapse: collapse"><%= @resource.snelbouwsteen140_totaal %></td>
+  </tr>
+   <tr>
+    <td style= "border: 1px solid black; border-collapse: collapse">Isollatie hardschuim</td>
+    <td style= "border: 1px solid black; border-collapse: collapse"><%= @resource.hardschuim_maandag %></td>
+    <td style= "border: 1px solid black; border-collapse: collapse"><%= @resource.hardschuim_dinsdag %></td>
+    <td style= "border: 1px solid black; border-collapse: collapse"><%= @resource.hardschuim_woensdag %></td>
+    <td style= "border: 1px solid black; border-collapse: collapse"><%= @resource.hardschuim_donderdag %></td>
+    <td style= "border: 1px solid black; border-collapse: collapse"><%= @resource.hardschuim_vrijdag %></td>
+    <td style= "border: 1px solid black; border-collapse: collapse"><%= @resource.hardschuim_totaal %></td>
+  </tr>
+  <tr>
+    <td style= "border: 1px solid black; border-collapse: collapse">Isolatie afplakken</td>
+    <td style= "border: 1px solid black; border-collapse: collapse"><%= @resource.isolatieafplakken_maandag %></td>
+    <td style= "border: 1px solid black; border-collapse: collapse"><%= @resource.isolatieafplakken_dinsdag %></td>
+    <td style= "border: 1px solid black; border-collapse: collapse"><%= @resource.isolatieafplakken_woensdag %></td>
+    <td style= "border: 1px solid black; border-collapse: collapse"><%= @resource.isolatieafplakken_donderdag %></td>
+    <td style= "border: 1px solid black; border-collapse: collapse"><%= @resource.isolatieafplakken_vrijdag %></td>
+    <td style= "border: 1px solid black; border-collapse: collapse"><%= @resource.isolatieafplakken_totaal %></td>
+  </tr>
+   <tr>
+    <td style= "border: 1px solid black; border-collapse: collapse">Rollagen</td>
+    <td style= "border: 1px solid black; border-collapse: collapse"><%= @resource.rollagen_maandag %></td>
+    <td style= "border: 1px solid black; border-collapse: collapse"><%= @resource.rollagen_dinsdag %></td>
+    <td style= "border: 1px solid black; border-collapse: collapse"><%= @resource.rollagen_woensdag %></td>
+    <td style= "border: 1px solid black; border-collapse: collapse"><%= @resource.rollagen_donderdag %></td>
+    <td style= "border: 1px solid black; border-collapse: collapse"><%= @resource.rollagen_vrijdag %></td>
+    <td style= "border: 1px solid black; border-collapse: collapse"><%= @resource.rollagen_totaal %></td>
+  </tr>
+   <tr>
+    <td style= "border: 1px solid black; border-collapse: collapse">Ditilatie</td>
+    <td style= "border: 1px solid black; border-collapse: collapse"><%= @resource.dilitatie_maandag %></td>
+    <td style= "border: 1px solid black; border-collapse: collapse"><%= @resource.dilitatie_dinsdag %></td>
+    <td style= "border: 1px solid black; border-collapse: collapse"><%= @resource.dilitatie_woensdag %></td>
+    <td style= "border: 1px solid black; border-collapse: collapse"><%= @resource.dilitatie_donderdag %></td>
+    <td style= "border: 1px solid black; border-collapse: collapse"><%= @resource.dilitatie_vrijdag %></td>
+    <td style= "border: 1px solid black; border-collapse: collapse"><%= @resource.dilitatie_totaal %></td>
+  </tr>
+   <tr>
+    <td style= "border: 1px solid black; border-collapse: collapse">Latei staal/beton tot 25kg</td>
+    <td style= "border: 1px solid black; border-collapse: collapse"><%= @resource.lateitot25_maandag %></td>
+    <td style= "border: 1px solid black; border-collapse: collapse"><%= @resource.lateitot25_dinsdag %></td>
+    <td style= "border: 1px solid black; border-collapse: collapse"><%= @resource.lateitot25_woensdag %></td>
+    <td style= "border: 1px solid black; border-collapse: collapse"><%= @resource.lateitot25_donderdag %></td>
+    <td style= "border: 1px solid black; border-collapse: collapse"><%= @resource.lateitot25_vrijdag %></td>
+    <td style= "border: 1px solid black; border-collapse: collapse"><%= @resource.lateitot25_totaal %></td>
+  </tr>
+   <tr>
+    <td style= "border: 1px solid black; border-collapse: collapse">Latei staal/beton tot 50kg</td>
+    <td style= "border: 1px solid black; border-collapse: collapse"><%= @resource.lateitot50_maandag %></td>
+    <td style= "border: 1px solid black; border-collapse: collapse"><%= @resource.lateitot50_dinsdag %></td>
+    <td style= "border: 1px solid black; border-collapse: collapse"><%= @resource.lateitot50_woensdag %></td>
+    <td style= "border: 1px solid black; border-collapse: collapse"><%= @resource.lateitot50_donderdag %></td>
+    <td style= "border: 1px solid black; border-collapse: collapse"><%= @resource.lateitot50_vrijdag %></td>
+    <td style= "border: 1px solid black; border-collapse: collapse"><%= @resource.lateitot50_totaal %></td>
+  </tr>
+   <tr>
+    <td style= "border: 1px solid black; border-collapse: collapse">Negge groter dan 90</td>
+    <td style= "border: 1px solid black; border-collapse: collapse"><%= @resource.negge_maandag %></td>
+    <td style= "border: 1px solid black; border-collapse: collapse"><%= @resource.negge_dinsdag %></td>
+    <td style= "border: 1px solid black; border-collapse: collapse"><%= @resource.negge_woensdag %></td>
+    <td style= "border: 1px solid black; border-collapse: collapse"><%= @resource.negge_donderdag %></td>
+    <td style= "border: 1px solid black; border-collapse: collapse"><%= @resource.negge_vrijdag %></td>
+    <td style= "border: 1px solid black; border-collapse: collapse"><%= @resource.negge_totaal %></td>
+  </tr>
+    <tr>
+    <td style= "border: 1px solid black; border-collapse: collapse">Perinsul</td>
+    <td style= "border: 1px solid black; border-collapse: collapse"><%= @resource.perinsul_maandag %></td>
+    <td style= "border: 1px solid black; border-collapse: collapse"><%= @resource.perinsul_dinsdag %></td>
+    <td style= "border: 1px solid black; border-collapse: collapse"><%= @resource.perinsul_woensdag %></td>
+    <td style= "border: 1px solid black; border-collapse: collapse"><%= @resource.perinsul_donderdag %></td>
+    <td style= "border: 1px solid black; border-collapse: collapse"><%= @resource.perinsul_vrijdag %></td>
+    <td style= "border: 1px solid black; border-collapse: collapse"><%= @resource.perinsul_totaal %></td>
+  </tr>
+     <tr>
+    <td style= "border: 1px solid black; border-collapse: collapse">Schragensteiger</td>
+    <td style= "border: 1px solid black; border-collapse: collapse"><%= @resource.schragensteiger_maandag %></td>
+    <td style= "border: 1px solid black; border-collapse: collapse"><%= @resource.schragensteiger_dinsdag %></td>
+    <td style= "border: 1px solid black; border-collapse: collapse"><%= @resource.schragensteiger_woensdag %></td>
+    <td style= "border: 1px solid black; border-collapse: collapse"><%= @resource.schragensteiger_donderdag %></td>
+    <td style= "border: 1px solid black; border-collapse: collapse"><%= @resource.schragensteiger_vrijdag %></td>
+    <td style= "border: 1px solid black; border-collapse: collapse"><%= @resource.schragensteiger_totaal %></td>
+  </tr>
+   <tr>
+    <td style= "border: 1px solid black; border-collapse: collapse">Consoles/metselb.</td>
+    <td style= "border: 1px solid black; border-collapse: collapse"><%= @resource.consoles_maandag %></td>
+    <td style= "border: 1px solid black; border-collapse: collapse"><%= @resource.consoles_dinsdag %></td>
+    <td style= "border: 1px solid black; border-collapse: collapse"><%= @resource.consoles_woensdag %></td>
+    <td style= "border: 1px solid black; border-collapse: collapse"><%= @resource.consoles_donderdag %></td>
+    <td style= "border: 1px solid black; border-collapse: collapse"><%= @resource.consoles_vrijdag %></td>
+    <td style= "border: 1px solid black; border-collapse: collapse"><%= @resource.consoles_totaal %></td>
+  </tr>
+  <tr>
+    <td style= "border: 1px solid black; border-collapse: collapse">Vloerrooster</td>
+    <td style= "border: 1px solid black; border-collapse: collapse"><%= @resource.vloerrooster_maandag %></td>
+    <td style= "border: 1px solid black; border-collapse: collapse"><%= @resource.vloerrooster_dinsdag %></td>
+    <td style= "border: 1px solid black; border-collapse: collapse"><%= @resource.vloerrooster_woensdag %></td>
+    <td style= "border: 1px solid black; border-collapse: collapse"><%= @resource.vloerrooster_donderdag %></td>
+    <td style= "border: 1px solid black; border-collapse: collapse"><%= @resource.vloerrooster_vrijdag %></td>
+    <td style= "border: 1px solid black; border-collapse: collapse"><%= @resource.vloerrooster_totaal %></td>
+  </tr>
+   <tr>
+    <td style= "border: 1px solid black; border-collapse: collapse">Stootvoegrooster</td>
+    <td style= "border: 1px solid black; border-collapse: collapse"><%= @resource.stootvoegrooster_maandag %></td>
+    <td style= "border: 1px solid black; border-collapse: collapse"><%= @resource.stootvoegrooster_dinsdag %></td>
+    <td style= "border: 1px solid black; border-collapse: collapse"><%= @resource.stootvoegrooster_woensdag %></td>
+    <td style= "border: 1px solid black; border-collapse: collapse"><%= @resource.stootvoegrooster_donderdag %></td>
+    <td style= "border: 1px solid black; border-collapse: collapse"><%= @resource.stootvoegrooster_vrijdag %></td>
+    <td style= "border: 1px solid black; border-collapse: collapse"><%= @resource.stootvoegrooster_totaal %></td>
+  </tr>
+   <tr>
+    <td style= "border: 1px solid black; border-collapse: collapse">Murfor</td>
+    <td style= "border: 1px solid black; border-collapse: collapse"><%= @resource.murfor_maandag %></td>
+    <td style= "border: 1px solid black; border-collapse: collapse"><%= @resource.murfor_dinsdag %></td>
+    <td style= "border: 1px solid black; border-collapse: collapse"><%= @resource.murfor_woensdag %></td>
+    <td style= "border: 1px solid black; border-collapse: collapse"><%= @resource.murfor_donderdag %></td>
+    <td style= "border: 1px solid black; border-collapse: collapse"><%= @resource.murfor_vrijdag %></td>
+    <td style= "border: 1px solid black; border-collapse: collapse"><%= @resource.murfor_totaal %></td>
+  </tr>
+   <tr>
+    <td style= "border: 1px solid black; border-collapse: collapse">DPC</td>
+    <td style= "border: 1px solid black; border-collapse: collapse"><%= @resource.dpc_maandag %></td>
+    <td style= "border: 1px solid black; border-collapse: collapse"><%= @resource.dpc_dinsdag %></td>
+    <td style= "border: 1px solid black; border-collapse: collapse"><%= @resource.dpc_woensdag %></td>
+    <td style= "border: 1px solid black; border-collapse: collapse"><%= @resource.dpc_donderdag %></td>
+    <td style= "border: 1px solid black; border-collapse: collapse"><%= @resource.dpc_vrijdag %></td>
+    <td style= "border: 1px solid black; border-collapse: collapse"><%= @resource.dpc_totaal %></td>
+  </tr>
+   <tr>
+    <td style= "border: 1px solid black; border-collapse: collapse">Zagen</td>
+    <td style= "border: 1px solid black; border-collapse: collapse"><%= @resource.zagen_maandag %></td>
+    <td style= "border: 1px solid black; border-collapse: collapse"><%= @resource.zagen_dinsdag %></td>
+    <td style= "border: 1px solid black; border-collapse: collapse"><%= @resource.zagen_woensdag %></td>
+    <td style= "border: 1px solid black; border-collapse: collapse"><%= @resource.zagen_donderdag %></td>
+    <td style= "border: 1px solid black; border-collapse: collapse"><%= @resource.zagen_vrijdag %></td>
+    <td style= "border: 1px solid black; border-collapse: collapse"><%= @resource.zagen_totaal %></td>
+  </tr>
+   <tr>
+    <td style= "border: 1px solid black; border-collapse: collapse">Gasbeton koude br.</td>
+    <td style= "border: 1px solid black; border-collapse: collapse"><%= @resource.gasbeton_maandag %></td>
+    <td style= "border: 1px solid black; border-collapse: collapse"><%= @resource.gasbeton_dinsdag %></td>
+    <td style= "border: 1px solid black; border-collapse: collapse"><%= @resource.gasbeton_woensdag %></td>
+    <td style= "border: 1px solid black; border-collapse: collapse"><%= @resource.gasbeton_donderdag %></td>
+    <td style= "border: 1px solid black; border-collapse: collapse"><%= @resource.gasbeton_vrijdag %></td>
+    <td style= "border: 1px solid black; border-collapse: collapse"><%= @resource.gasbeton_totaal %></td>
+  </tr>
+   <tr>
+    <td style= "border: 1px solid black; border-collapse: collapse">Raamdorpel tot 25</td>
+    <td style= "border: 1px solid black; border-collapse: collapse"><%= @resource.raamdorpel25_maandag %></td>
+    <td style= "border: 1px solid black; border-collapse: collapse"><%= @resource.raamdorpel25_dinsdag %></td>
+    <td style= "border: 1px solid black; border-collapse: collapse"><%= @resource.raamdorpel25_woensdag %></td>
+    <td style= "border: 1px solid black; border-collapse: collapse"><%= @resource.raamdorpel25_donderdag %></td>
+    <td style= "border: 1px solid black; border-collapse: collapse"><%= @resource.raamdorpel25_vrijdag %></td>
+    <td style= "border: 1px solid black; border-collapse: collapse"><%= @resource.raamdorpel25_totaal %></td>
+  </tr>
+  <tr>
+    <td style= "border: 1px solid black; border-collapse: collapse">Raamdorpel tot 50</td>
+    <td style= "border: 1px solid black; border-collapse: collapse"><%= @resource.raamdorpel50_maandag %></td>
+    <td style= "border: 1px solid black; border-collapse: collapse"><%= @resource.raamdorpel50_dinsdag %></td>
+    <td style= "border: 1px solid black; border-collapse: collapse"><%= @resource.raamdorpel50_woensdag %></td>
+    <td style= "border: 1px solid black; border-collapse: collapse"><%= @resource.raamdorpel50_donderdag %></td>
+    <td style= "border: 1px solid black; border-collapse: collapse"><%= @resource.raamdorpel50_vrijdag %></td>
+    <td style= "border: 1px solid black; border-collapse: collapse"><%= @resource.raamdorpel50_totaal %></td>
+  </tr>
+   <tr>
+    <td style= "border: 1px solid black; border-collapse: collapse">Raamdorpel tot 100</td>
+    <td style= "border: 1px solid black; border-collapse: collapse"><%= @resource.raamdorpel100_maandag %></td>
+    <td style= "border: 1px solid black; border-collapse: collapse"><%= @resource.raamdorpel100_dinsdag %></td>
+    <td style= "border: 1px solid black; border-collapse: collapse"><%= @resource.raamdorpel100_woensdag %></td>
+    <td style= "border: 1px solid black; border-collapse: collapse"><%= @resource.raamdorpel100_donderdag %></td>
+    <td style= "border: 1px solid black; border-collapse: collapse"><%= @resource.raamdorpel100_vrijdag %></td>
+    <td style= "border: 1px solid black; border-collapse: collapse"><%= @resource.raamdorpel100_totaal %></td>
+  </tr>
+   <tr>
+    <td style= "border: 1px solid black; border-collapse: collapse">Schuinte</td>
+    <td style= "border: 1px solid black; border-collapse: collapse"><%= @resource.schuinte_maandag%></td>
+    <td style= "border: 1px solid black; border-collapse: collapse"><%= @resource.schuinte_dinsdag %></td>
+    <td style= "border: 1px solid black; border-collapse: collapse"><%= @resource.schuinte_woensdag %></td>
+    <td style= "border: 1px solid black; border-collapse: collapse"><%= @resource.schuinte_donderdag %></td>
+    <td style= "border: 1px solid black; border-collapse: collapse"><%= @resource.schuinte_vrijdag %></td>
+    <td style= "border: 1px solid black; border-collapse: collapse"><%= @resource.schuinte_totaal%></td>
+  </tr>
+</table>
+
+<br>
+<strong>Opmerkingen:</strong>
+<p><%= @resource.opmerkingen %></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
