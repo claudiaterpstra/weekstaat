@@ -1,6 +1,6 @@
 Rails.application.configure do
   # Settings specified here will take precedence over those in config/application.rb.
-
+  config.action_mailer.default_url_options = { host: "weekstaat.herokuapp.com" }
   # Code is not reloaded between requests.
   config.cache_classes = true
 
@@ -28,7 +28,8 @@ Rails.application.configure do
     address:       'smtp.gmail.com',
     port:          '587',
     authentication: :plain,
-    enable_starttls_auto: true
+    enable_starttls_auto: true,
+    openssl_verify_mode: 'none'
   }
 
   # Compress JavaScripts and CSS.
