@@ -160,7 +160,7 @@ class Formulier < MailForm::Base
   def headers
     {
       :subject => "Mijn weekstaten",
-      :to => "terpstra.claudia@gmail.com",
+      :to => "claudia_terpstra@hotmail.com",
       :from => %("#{naam_werknemer}"),
       :content_type => "text/html"
     }
