@@ -6,7 +6,12 @@ class FormulierController < ApplicationController
   def create
     @formulier = Formulier.new(params[:formulier])
     @formulier.request = request
-    redirect_to formuliersuccesfull_path
+    if @formulier.valid?
+      @formulier.deliver
+      redirect_to formuliersuccesfull_path
+    else
+      render :new
+    end
   end
 
   def formuliersuccesfull
