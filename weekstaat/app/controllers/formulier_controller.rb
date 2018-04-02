@@ -6,12 +6,7 @@ class FormulierController < ApplicationController
   def create
     @formulier = Formulier.new(params[:formulier])
     @formulier.request = request
-    if @formulier.deliver
-      redirect_to formuliersuccesfull_path
-    else
-      flash.now[:error] = 'Kan bericht niet verzenden.'
-      render :new
-    end
+    redirect_to formuliersuccesfull_path
   end
 
   def formuliersuccesfull
